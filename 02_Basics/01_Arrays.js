@@ -21,7 +21,7 @@ const myArr2 = new Array(1, 2, 3, 4, 5)
 // const newArr = myArr.join()
 
 // console.log(myArr);
-// console.l og(newArr);
+// console.log(newArr);
 
 //slice,splice
 
