@@ -70,3 +70,35 @@ console.log(Object.values(tinderUser));//Returns an array of values of the enume
 console.log(Object.entries(tinderUser));//Returns an array of key/values of the enumerable properties of an object
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));//Determines whether an object has a property with the specified name.
+
+
+// Object de-structure
+
+const course = {
+    coursename: "JavaScript",
+    price: "free",
+    courseinstructor: "random"
+}
+
+// course.courseinstructor
+
+const { courseinstructor: coach } = course
+
+// console.log(courseinstructor);
+console.log(coach);
+
+//Note: api data can be in both object and array formats
+
+// object format
+// {
+//     "name":"archit",
+//     "coursename":"Js",
+//     "price":"free"
+// } 
+
+// array format
+// [
+//     {},
+//     {},
+//     {}
+// ]
