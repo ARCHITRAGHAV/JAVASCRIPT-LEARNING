@@ -31,7 +31,7 @@ JsUser.email = "archit@gmail.com"//to update any value
 JsUser.greeting = function () {
     console.log("hi");
 }
-JsUser.greeting()// Do not write console.log() here because in above function we had not return any value. So, if you will write the console.log() then, it return undefined value, instead of this just call the function
+JsUser.greeting()// Do not write console.log() here because in above function we had not return any value. So, if you will write the console.log() then, it will return undefined value, instead of this just call the function
 
 JsUser.greetingTwo = function () {
     console.log(`Hi, my name is ${this.fullname}.`);
