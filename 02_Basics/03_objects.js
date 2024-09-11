@@ -1,4 +1,4 @@
-// singleton => jab constructor se object banta hai tab woh singleton object matlab single object
+// singleton => jab constructor se object banta hai tab woh singleton object hota hai matlab single object
 
 // Object.create
 
@@ -19,7 +19,7 @@ const JsUser = {
 
 // console.log(JsUser.email);
 // console.log(JsUser["fullname"]);
-// console.log(typeof JsUser[mySym]);//datatype is showwing string
+// console.log(typeof JsUser[mySym]);//datatype is showing string
 // console.log(JsUser["email"]);
 
 JsUser.email = "archit@gmail.com"//to update any value
