@@ -1,4 +1,4 @@
-// singleton => jab constructor se object banta hai tab woh singleton object matlab single object
+// singleton => jab constructor se object banta hai tab woh singleton object hota hai matlab single object
 
 // Object.create
 
