@@ -4,12 +4,12 @@
 
 // object literals
 
-const mySym = Symbol("key1");
+const mySym = Symbol("Key1");
 
 const JsUser = {
     name: "archit",
     "fullname": "Archit Raghav",
-    [mySym]: "mykey1",
+    [mySym]: "myKey1",
     age: 20,
     location: "ghaziabad",
     email: "architraghav@gmail.com",
