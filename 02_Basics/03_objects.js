@@ -19,19 +19,19 @@ const JsUser = {
 
 // console.log(JsUser.email);
 // console.log(JsUser["fullname"]);
-// console.log(typeof JsUser[mySym]);//datatype is showwing string
+// console.log(typeof JsUser[mySym]);//datatype is showing string
 // console.log(JsUser["email"]);
 
 JsUser.email = "archit@gmail.com"//to update any value
 
-// Object.freeze(JsUser);//to lock the values of an object so, that it can not be changed further
+// Object.freeze(JsUser);// to lock the values of an object so, that it can not be changed further
 
 // console.log(JsUser)
 
 JsUser.greeting = function () {
     console.log("hi");
 }
-JsUser.greeting()// Do not write console.log() here because in above function we had not return any value. So, if you will write the console.log() then, it return undefined value, instead of this just call the function
+JsUser.greeting()// Do not write console.log() here because in above function we had not return any value. So, if you will write the console.log() then, it will return undefined value, instead of this just call the function
 
 JsUser.greetingTwo = function () {
     console.log(`Hi, my name is ${this.fullname}.`);
