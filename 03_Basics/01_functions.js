@@ -13,7 +13,7 @@ function sayMyName() {
 // const result = addTwoNumbers(3, 5)
 // console.log("Result:" ,result);
 
-// Jab aap kissi function ko define karte ho tab uske parenthesis mein aap jo input lete hai usse parameter bolte hain aur jab aap function ko call karte ho tab aap usme jo value pass karte ho toh usse argument kehte hain
+// Jab aap kissi function ko define karte ho tab uske parenthesis mein aap jo input lete hai usse parameter bolte hain aur jab aap function ko call karte ho tab aap usme jo valueS pass karte ho toh usse arguments kehte hain
 
 function addTwoNumbers(number1, number2) {
     // let result = number1 + number2;
