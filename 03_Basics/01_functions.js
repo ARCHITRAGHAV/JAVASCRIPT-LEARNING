@@ -19,7 +19,7 @@ function addTwoNumbers(number1, number2) {
     // let result = number1 + number2;
     // return result
     return number1 + number2;;
-    console.log("Archit"); // by default JavaScript mein return ho ke baad kuch bhi kaam nahi hota function mein woh basically unreachable code hota HAI
+    console.log("Archit"); // by default JavaScript mein return ho ke baad kuch bhi kaam nahi hota function mein woh basically unreachable code hota hai
 }
 
 const result = addTwoNumbers(2, 3);
