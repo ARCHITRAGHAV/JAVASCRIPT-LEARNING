@@ -21,7 +21,7 @@ let's take an example:-
 let val1 = 10
 let val2 = 5
 function addNum(num1, num2){
-    let total = num1+num2
+    let total = num1 + num2
     return total
 }
 
@@ -42,11 +42,18 @@ let result2 = addNum(10,2)
     val2 -> 5
     addNum -> new execution context is created -> New Variable Environment + Execution Thread
         - Memory Creation Phase of function:
-            val1-> undefined
-            val2-> undefined
-            total->undeined
-        Execution Phase of function:
-            num1-> 10
-            num2-> 5
-            total->15
-    
+            val1 -> undefined
+            val2 -> undefined
+            total -> undeined
+        - Execution Phase of function:
+            num1 -> 10
+            num2 -> 5
+            total ->15
+    then, it will automatically deleted.
+    result1 -> 15
+    result2 -> new variable environment + execution thread
+        - Memory Phase
+        - Execution Phase
+        all the steps are repeated like above steps
+
+Basically, all the programs of Js have executed in a Call Stack which works on the principal of LIFO(Last In First Out).
