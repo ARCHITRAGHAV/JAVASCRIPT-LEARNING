@@ -1,8 +1,8 @@
-JavaScript Exexution Context -> how the program of javascript executes on different types of run-time environment.
+JavaScript Exexution Context -> how the program of javascript executes on different types of JavaScript run-time environment.
 
-Global Execution Context of Browser is Window Object. We can get it by using this keyword.
+Global Execution Context of Browser is Window Object, we can get it by using this keyword.
 
-Global Execution Context of Node Js is an empty Object. We can get it by using this keyword.
+Global Execution Context of Node Js is an empty Object, we can get it by using this keyword.
 
 JavaScript is a single threaded language. In this every code works as a process.
 
@@ -44,11 +44,11 @@ let result2 = addNum(10,2)
         - Memory Creation Phase of function:
             val1 -> undefined
             val2 -> undefined
-            total -> undeined
+            total -> undefined
         - Execution Phase of function:
             num1 -> 10
             num2 -> 5
-            total ->15
+            total -> 15
     then, it will automatically deleted.
     result1 -> 15
     result2 -> new variable environment + execution thread
