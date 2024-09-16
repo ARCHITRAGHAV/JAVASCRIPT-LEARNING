@@ -8,4 +8,22 @@ const myNums = [1, 2, 3]
 // console.log(myTotal);
 
 const myTotal = myNums.reduce((acc, currval) => acc * currval, 1)
-console.log(myTotal);
+// console.log(myTotal);
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 999
+    },
+    {
+        itemName: "python course",
+        price: 2999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+const totalPrice = shoppingCart.reduce((acc, currval) => acc + currval.price, 0)
+console.log(totalPrice);
