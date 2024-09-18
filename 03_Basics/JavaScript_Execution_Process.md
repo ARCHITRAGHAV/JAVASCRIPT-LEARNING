@@ -17,7 +17,7 @@ In Js code is divided into two phases :-
 2. Execution Phase -> In this, operations are performed on these variables,etc.
 
 let's take an example:-
-
+```javascript
 let val1 = 10
 let val2 = 5
 function addNum(num1, num2){
@@ -27,7 +27,7 @@ function addNum(num1, num2){
 
 let result1 = addNum(val1,val2)
 let result2 = addNum(10,2)
-
+```
 1. Global Environment -> this
 
 2. Memory Phase :
