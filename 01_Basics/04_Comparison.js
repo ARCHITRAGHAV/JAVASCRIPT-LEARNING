@@ -19,4 +19,5 @@ console.log(undefined < 0);
 
 // ===
 
-console.log("2" === 2);
+console.log(2 == "2"); //true (only checks value)
+console.log(2 === "2"); //false (checks both value and its datatype)
