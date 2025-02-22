@@ -125,3 +125,75 @@ let myData = myCredentials;
 myData.name = "Archit";
 // console.log(myData.name);
 // console.log(myCredentials.name);
+
+// Strings 
+const fname = "archit";
+const repoCount = 50;
+
+// console.log(fname + repoCount);
+
+// String Literals or String Interpolation using back ticks or basically placeholders ke beech mein kissi variables ko inject kar sakte hain
+// console.log(`hello my name is ${fname} and my repoCount is ${repoCount}`);
+
+const gameName = new String("Archit-Raghav");
+
+// console.log(gameName[0]);
+// console.log(gameName.__proto__); //object hota hai
+
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+
+// console.log(gameName.charAt(2)); // character return kardega specific index pe
+
+// console.log(gameName.indexOf("t")); // index return kardega specific character ka
+
+const newString = gameName.substring(0, 4); //last index is not included
+// console.log(newString);
+
+const anotherString = gameName.slice(-6, 4);
+// console.log(anotherString);
+
+const newStringOne = "  archit  ";
+// console.log(newStringOne);
+// console.log(newStringOne.length);
+// console.log(newStringOne.trim().length);
+// console.log(newStringOne.trimStart().length);
+
+const url = "https://architraghav.com/home docs";
+// console.log(url.replace(" ", "%20"));
+
+// console.log(url.includes("archit")); // true
+// console.log(url.includes("archikt")); // false
+// console.log(gameName.split("-")); // returns array
+
+const value = new Boolean(true);
+// console.log(typeof value);
+
+const balance = new Number(100);
+// console.log(typeof balance);// object
+
+// console.log(balance.toString().length);
+
+// console.log(balance.toFixed(2)); //datatype is string
+
+const otherNumber = 123.677;
+// console.log(otherNumber.toPrecision(4));
+
+const hundreds = 1000000
+
+// console.log(hundreds.toLocaleString('en-IN'));
+
+// console.log(Math);
+
+// console.table([Math.abs(-4), Math.round(3.5), Math.ceil(4.8), Math.floor(4.7)]);
+
+// console.log(Math.floor(Math.random() * 10) + 1);
+
+// const min = 10;
+// const max = 20;
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+let l = Math.floor(Math.random() * 255) + 1;
+let m = Math.floor(Math.random() * 255) + 1;
+let n = Math.floor(Math.random() * 255) + 1;
+// console.log(`RGB color : (${l},${m},${n})`);
