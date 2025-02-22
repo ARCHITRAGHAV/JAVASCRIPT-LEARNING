@@ -197,3 +197,141 @@ let l = Math.floor(Math.random() * 255) + 1;
 let m = Math.floor(Math.random() * 255) + 1;
 let n = Math.floor(Math.random() * 255) + 1;
 // console.log(`RGB color : (${l},${m},${n})`);
+
+// Arrays
+
+const myArr = [1, 2, 3, 4, 5, 1];
+const myHeroes = ['shaktimaan', 'naagraj'];
+
+// console.log(myArr);
+// console.log(myArr.length);
+// console.log(myArr[1]);
+
+// Array Methods
+// myArr.push(6); //Appends new elements to the end of an array.
+// myArr.pop();// removes last element from the array.
+
+// myArr.unshift(0); //Inserts new elements at the start of an array and very time consuming method.
+// myArr.shift(); //Removes the first element from an array and returns it.
+
+// console.log(myArr.includes(9));
+// console.log(myArr.indexOf(1)); //Returns the index of the first occurrence of a value in an array, or -1 if it is not present
+
+const newArr = myArr.join("-"); //Adds all the elements of an array into a string, separated by the specified separator string
+// console.log(typeof newArr);
+// console.log(newArr);
+
+// console.log(myArr);
+
+// slice, splice
+
+// console.log("A", myArr);
+const myArr1 = myArr.slice(1, 3); //Returns a copy of a section of an array
+// console.log(myArr1);
+// console.log("B", myArr);
+
+const myArr2 = myArr.splice(1, 3); // Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
+// console.log(myArr2);
+// console.log("B", myArr);
+
+const marvel_heroes = ["thor", "Ironman", "spiderman"];
+const dc_heroes = ["superman", "flash", "batman"];
+
+// console.log(marvel_heroes.concat(dc_heroes)); // Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+
+const all_Heroes = [...marvel_heroes, ...dc_heroes]; //spread operator
+// console.log(all_Heroes);
+
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
+
+const real_another_array = another_array.flat(Infinity);
+// console.log(real_another_array);
+
+let score1 = 10;
+let score2 = 20;
+let score3 = 30;
+// console.log(Array.of(score1, score2, score3))
+
+// let arr1=[1,2,3,4,5,6,6];
+// let arr2=["Archit", "Raghav", "Kanha", "Raghuvanshi"];
+// let arr3=[...arr1, ...arr2];
+// console.log(arr3);
+// console.log(arr1.concat(arr2));
+
+
+// Objects
+
+// singleton object constructor se banta hai
+// Object Literals
+
+const mySym = Symbol("key1");
+
+const JsUser = {
+    name: "Archit",
+    "fullname": "architraghav",
+    [mySym]: "key10",
+    age: 21,
+    location: "Vasundhara",
+    email: "archit.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Wednesday"]
+}
+// console.log(JsUser.fullname);
+// console.log(JsUser["fullname"]);
+// console.log(JsUser["name"]);
+// console.log(JsUser.name);
+
+JsUser.email = "architraghav@gmail.com";
+// Object.freeze(JsUser);
+// console.log(JsUser["email"]);
+// JsUser.email = "architraghav@hotmail.com";
+// console.log(JsUser);
+
+// JsUser.greeting = function () {
+//     console.log("Hello Js User");
+// }
+// JsUser.greeting();
+// JsUser.greeting2 = function () {
+//     console.log(`hello, my name is ${this.name}`);
+// }
+// JsUser.greeting2();
+
+// const tinderUser=new Object();
+// tinderUser.name="Archit";
+// console.log(tinderUser);
+
+const tinderUser = {};
+tinderUser.id = "123Abc";
+tinderUser.name = "Archit";
+tinderUser.isLoggedIn = false;
+// console.log(tinderUser);
+// console.table([tinderUser.name, tinderUser.id, tinderUser.isLoggedIn])
+
+const regularUser = {
+    email: "random@gmail.com",
+    fullname: {
+        userfullname: {
+            fname: "Archit",
+            lname: "Raghav"
+        }
+    }
+};
+
+// console.log(regularUser.fullname.userfullname.lname);
+
+const obj1 = {
+    1: "a", 2: "b"
+}
+const obj2 = {
+    3: "a", 4: "b"
+}
+
+// const obj3 = { obj1, obj2 };
+// const obj3 = { ...obj1, ...obj2 };
+const obj3 = Object.assign({}, obj1, obj2)
+// console.log(obj3);
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
