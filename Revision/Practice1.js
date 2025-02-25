@@ -335,3 +335,60 @@ const obj3 = Object.assign({}, obj1, obj2)
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 // console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+// Objects De-Structuring
+
+const course = {
+    courseName: "Js",
+    price: 999,
+    courseMentor: "Raj"
+}
+
+const { courseMentor: teacher } = course;
+// console.log(courseMentor);
+// console.log(teacher);
+
+// JSON
+
+// {
+//     "courseName": "Js",
+//     "price": 999,
+//     "courseMentor": "Raj"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+// Functions
+
+function sayMyName() {
+    const name = "Archit";
+    for (let i = 0; i < name.length; i++) {
+        console.log(name[i]);
+    }
+}
+// sayMyName();
+
+function addTwoNumbers(num1, num2) {
+    if (typeof num1 == "number" && typeof num2 == "number") {
+        return num1 + num2;
+    }
+    else {
+        return "sorry can't add";
+    }
+}
+// let sum = addTwoNumbers(3, 8.9);
+// console.log("Sum = ", sum);
+
+function loginUserMessage(username) {
+    if (!username) {
+        console.log("Pls enter the username: ");
+        return
+    } else {
+        return `My username is ${username}.`
+    }
+}
+console.log(loginUserMessage("Archit"));
