@@ -483,3 +483,231 @@ function addone(num) {
 const addtwo = function (num) { //mini hoisting concept
     return num + 2;
 }
+
+// Arrow Functions and this keyword
+
+const userJava = {
+    username: "Archit",
+    print: function () {
+        console.log(this.username);
+        console.log(this);
+
+    }
+}
+// userJava.print();
+// userJava.username = "Sam";
+// userJava.print();
+// console.log(this); // {}
+
+function hello() {
+    console.log(this);
+}
+// hello(); // global object
+const hola = function () {
+    console.log(this);
+
+}
+// hola(); // global object
+
+const hi = () => {
+    console.log(this);
+}
+// hi();  // {}
+
+const print = () => `hi`;
+// console.log(print());
+
+// const sumtwo = (num1, num2) => (num1 + num2); // implicit return
+// console.log(sumtwo(10, 20));
+
+const sumtwo = (num1, num2) => {
+    return num1 + num2;
+}
+// console.log(sumtwo(20, 25));
+
+// IIFE
+
+// (function (num1, num2) {
+//     console.log(Math.max(num1, num2));
+// })(1, 2);
+
+// ((num1, num2) => {
+//     console.log(Math.min(num1, num2));
+// })(10, 12);
+
+// (() => {
+//     console.log("hello");
+// })();
+
+function allowedToEnter(age) {
+    if (age > 18) {
+        console.log("Allowed To Enter");
+    } else {
+        console.log("Not Allowed");
+    }
+}
+// allowedToEnter(45);
+
+const checkNum = (num) => {
+    if (num === 0) {
+        console.log(`Number is ${num}`);
+    }
+    else if (num < 0) {
+        console.log(`${num} is a negative number.`);
+    } else {
+        console.log(`${num} is a positive number.`);
+    }
+}
+// checkNum(90);
+
+const userLoggedIn = true;
+const debitCard = true;
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+const buy = () => {
+    if (userLoggedIn && debitCard) {
+        console.log("Allowed to buy");
+    }
+    if (loggedInFromGoogle || loggedInFromEmail) {
+        console.log("user logged in");
+    }
+}
+// buy();
+
+// Switch Statement
+
+const monthName = (monthNumber) => {
+    switch (monthNumber) {
+        case 1: {
+            console.log("January");
+            break;
+        }
+        case 2: {
+            console.log("February");
+            break;
+        }
+        case 3: {
+            console.log("March");
+            break;
+        }
+        case 4: {
+            console.log("April");
+            break;
+        }
+        default: {
+            console.log("Wrong number Entered");
+            break;
+        }
+    }
+}
+// monthName(3);
+
+const userEmail = []
+
+// if (userEmail) {
+//     console.log("Got");
+// } else {
+//     console.log("Not Got");
+// }
+
+// if (userEmail.length === 0) {
+//     console.log("Array is empty");
+// }
+
+// const ob = {};
+
+// if (Object.keys(ob).length === 0) {
+//     console.log("Empty");
+// }
+
+// console.log(false == 0); // true
+// console.log(false == ""); // true
+// console.log(0 == ""); // true
+
+// Nullish Coalescing Operator (??): null undefined 
+
+let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 10;
+// val1 = undefined ?? 20;
+// val1 = null ?? undefined ?? 156; //156
+// val1 = null ?? undefined; // undefined
+// val1 = undefined ?? null; // null
+
+// console.log(val1);
+
+// Ternary Operator
+
+// condition ? true : false;
+
+const iceTeaPrice = 100;
+
+// iceTeaPrice <= 80 ? console.log("Less than 80") : console.log("Greater tha 80");
+
+// Loops
+
+// for loop
+
+let arr = [10, 20, 30];
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i], i);
+// }
+
+// While Loop
+
+// let i = 0;
+
+// while (i < arr.length) {
+//     console.log(arr[i], i);
+//     i++;
+// }
+
+// Do While Loop
+
+// let i = 0;
+
+// do {
+//     console.log(arr[i], i);
+//     i++;
+// } while (i < arr.length);
+
+const floydTriangle = () => {
+    let abc = 1;
+    for (let i = 0; i < 4; i++) {
+        let row = "";
+        for (let j = 0; j < i + 1; j++) {
+            row = row + abc + " ";
+            abc++;
+        }
+        console.log(row.trim());
+    }
+}
+// floydTriangle();
+
+let bsarray = [1, 24, 45, 56, 66, 123];
+
+function binarySearch(search) {
+    let start = 0;
+    let end = bsarray.length;
+    let found = false;
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+        if (search === bsarray[mid]) {
+            console.log(`${search} found at index no. : ${mid}`);
+            found = true;
+            break;
+        }
+        else if (search < bsarray[mid]) {
+            end = mid - 1;
+        }
+        else {
+            start = mid + 1;
+        }
+    }
+    if (!found) {
+        console.log("Not Present");
+
+    }
+}
+// binarySearch(123);
