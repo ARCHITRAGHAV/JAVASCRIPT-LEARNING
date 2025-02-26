@@ -25,7 +25,7 @@ var accountPassword = 123;
 
 
 let name = "Archit"; //string
-let age = 21; //number
+// let age = 21; //number
 let isMarried = false; //boolean
 let address = null; //object
 let gender = undefined; //undefined
@@ -391,4 +391,95 @@ function loginUserMessage(username) {  //(username="Samurai")
         return `My username is ${username}.`
     }
 }
-console.log(loginUserMessage("Archit"));
+// console.log(loginUserMessage("Archit"));
+
+function calculateCartPrice(val1, val2, ...num1) { //rest operator
+    return num1;
+}
+// console.log(calculateCartPrice(200, 300, 400)); //result will be displayed in an array
+
+const user = {
+    username: "Archit",
+    price: 20
+}
+function handleUser(anyobject) {
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleUser(user);
+// handleUser({
+//     username: "Raghav",
+//     price: 399
+// })
+
+const myNewArray = [200, 300, 400];
+
+function returSecondValue(myNewArray) {
+    return myNewArray[1];
+}
+// console.log(returSecondValue(myNewArray));
+
+// console.log(returSecondValue([200, 400, 56]));
+
+
+// Scope
+
+// var c = 300;
+
+let a = 300;
+
+if (true) {
+    let a = 10;
+    const b = 20;
+    // var c = 30;
+    // console.log(a); //Block Scope
+
+}
+
+// console.log(a); //Global Scope
+
+function getArray(printArray) {
+    for (let index = 0; index < printArray.length; index++) {
+        console.log(printArray[index]);
+    }
+}
+// getArray([1,2,3,4,5]);
+
+function getValues(getObject) {
+    return `${getObject.username}`
+}
+// console.log(getValues({
+//     username: "Archit"
+// }));
+
+function one() {
+    const username = "Archit";
+    function two() {
+        const age = 21;
+        console.log(username);
+    }
+    console.log(age);
+    two();
+}
+// one();
+
+if (true) {
+    const username = "Archit";
+    if (username === "Archit") {
+        const age = 21;
+        // console.log(username + " " + age);
+    }
+    // console.log(age);
+
+}
+// console.log(username);
+
+// addone(5);
+function addone(num) {
+    return num + 1;
+}
+
+// addtwo(3)
+const addtwo = function (num) { //mini hoisting concept
+    return num + 2;
+}
