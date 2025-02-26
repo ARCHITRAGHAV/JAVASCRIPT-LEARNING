@@ -383,7 +383,7 @@ function addTwoNumbers(num1, num2) {
 // let sum = addTwoNumbers(3, 8.9);
 // console.log("Sum = ", sum);
 
-function loginUserMessage(username) {
+function loginUserMessage(username) { // //(username="Samurai")
     if (!username) {
         console.log("Pls enter the username: ");
         return
