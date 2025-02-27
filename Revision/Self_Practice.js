@@ -119,3 +119,44 @@
 // console.log(Object.assign({}, jsUser, pyUser));
 
 // console.table([Object.keys(pyUser), Object.values(pyUser), Object.entries(pyUser)])
+
+
+// const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let elem of myArr) {
+//     elem = elem + 10;
+//     console.log(elem);
+// }
+
+// for (let elem in myArr) {
+//     myArr[elem] = myArr[elem] + 10;
+//     console.log(myArr[elem]);
+// }
+
+// myArr.forEach((item) => {
+//     item = item + 10;
+//     console.log(item);
+// })
+
+// console.log(myArr.map((item) => item + 10));
+
+// const obj = {
+//     name: "Archit",
+//     age: 21,
+//     course: "BTech CSE with specialisation in Data Science"
+// }
+
+// for (const key in obj) {
+//     console.log(key + " : " + obj[key]);
+// }
+
+// myArr.forEach((item, index) => {
+//     if (index > 4 && (item % 2 === 0)) {
+//         console.log(item);
+//     }
+// })
+
+// const sum = myArr.reduce((acc, cv) => {
+//     return acc + cv;
+// }, 0)
+// console.log(sum);
