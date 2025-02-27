@@ -711,3 +711,90 @@ function binarySearch(search) {
     }
 }
 // binarySearch(123);
+
+// High Order Array Loops
+
+// for of
+const Arr = [1, 2, 3, 4];
+
+// for (const num of Arr) {
+//     console.log(num);
+// }
+
+const greeting = "Hello World";
+// for (const greet of greeting) {
+//     if (greet === " ") {
+//         continue;
+//     }
+//     console.log(greet); // greet == greeting[0]
+// }
+
+
+// Maps
+
+const map = new Map(); // unique values
+map.set('IN', "India");
+map.set("USA", "United States of America");
+map.set('FR', "France");
+
+// console.log(map);
+
+// for (const [key, value] of map) {
+//    console.log(key, "=>", value);
+// }
+
+// for of is for basically Array, string and map.
+
+const langObject = {
+    js: "Javascript",
+    py: "Python",
+    rb: "Ruby",
+    ts: "Typescript"
+}
+
+// for (const key in langObject) {
+//     console.log(key, "=>", langObject[key]);
+// }
+
+// for (const num in Arr) { // num===0
+//     console.log(Arr[num]);
+// }
+
+// for each loop
+
+const coding = ["js", "java", "ruby", "python", "cpp"];
+// coding.forEach((element) => {
+//     console.log(element);
+// })
+
+function printme(item) {
+    console.log(item);
+}
+// coding.forEach(printme);
+
+// coding.forEach((item, index, arr) => {
+//     console.log(item, index, arr);
+// })
+
+const myCoding = [
+    {
+        languageName: "javascript",
+        languageFileName: "js"
+    },
+    {
+        languageName: "C++",
+        languageFileName: "cpp"
+    },
+    {
+        languageName: "python",
+        languageFileName: "py"
+    },
+]
+
+// myCoding.forEach((item, index) => {
+//     if (index === 0) {
+//         console.log(item.languageFileName);
+//     }
+// })
+
+// console.log((myCoding[0].languageFileName));
