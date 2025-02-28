@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="color: crimson; font-family: Poppins;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    let ul = document.querySelector("ul");
+    function addLanguage(langName) {
+        let li = document.createElement("li");
+        li.innerText = `${langName}`;
+        ul.appendChild(li);
+    }
+    addLanguage("Java");
+    addLanguage("Ruby");
+    addLanguage("C++");
+    addLanguage("C#");
+
+    function addOptiLanguage(langName) {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("Python");
+</script>
+
+</html>

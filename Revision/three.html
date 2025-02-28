@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three </title>
+</head>
+
+<body style="background-color: #212121">
+
+</body>
+<script>
+    let div = document.createElement("div");
+    div.className = "main";
+    div.id = Math.floor(Math.random() * 10 + 1);
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="crimson";
+    div.style.padding="2vw";
+    // div.innerText="Archit Raghav";
+    const addText=document.createTextNode("Archit");
+    div.style.color="white"
+    div.appendChild(addText);
+    document.body.appendChild(div);
+    console.log(div);
+
+</script>
+
+</html>
