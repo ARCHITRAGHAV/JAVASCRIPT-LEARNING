@@ -1,6 +1,7 @@
 let form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
+    
     e.preventDefault();
 
     let height = form.querySelector("#height").value;
