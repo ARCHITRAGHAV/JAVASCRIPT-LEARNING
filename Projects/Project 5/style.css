@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-bottom: 3vh;
+}
+
+#box {
+    margin-top: 5vh;
+    height: 20vh;
+    width: 30vw;
+    border: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
