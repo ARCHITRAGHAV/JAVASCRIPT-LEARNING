@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>HTML Events </title>
+</head>
+
+<body style="font-family: Poppins;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop">
+            </li>
+            <li>
+                <img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="">
+            </li>
+            <li>
+                <img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="">
+            </li>
+            <li>
+                <img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="">
+            </li>
+            <li>
+                <img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="">
+            </li>
+            <li>
+                <a style="color:#212121 ; text-decoration:none ;" href="https://google.com" id="google">Google</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById("owl").onclick = function () {
+        //     alert('Owl')
+        // }
+
+        // attachEvent()
+        // jQuery - on
+
+        // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY, altkey, ctrlkey, shiftkey, keyCode
+
+        // document.getElementById("images").addEventListener("click", (e) => {
+        //     console.log("clicked inside the ul");
+        // }, false)
+
+        // document.getElementById("owl").addEventListener("click", (e) => {
+        //     console.log("clicked inside the owl");
+        //     e.stopPropagation()
+        // }, false)
+
+        // document.getElementById("google").addEventListener("click", (e) => {
+        //     e.preventDefault()
+        //     e.stopPropagation();
+        //     console.log("Google Clicked");
+        // })
+
+        function imageHiddener() {
+            let ul = document.querySelector("ul");
+            let list = ul.querySelectorAll("li");
+            list.forEach((e) => {
+                e.addEventListener("click", () => {                   
+                    e.remove();
+                })
+            })
+        }
+        imageHiddener();
+
+
+    </script>
+</body>
+
+</html>
