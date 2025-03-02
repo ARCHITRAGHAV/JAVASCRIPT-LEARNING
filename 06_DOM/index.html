@@ -17,7 +17,7 @@
     <div>
         <h1 id="title" class="heading">DOM Learning</h1>
         <h2>Lorem ipsum dolor sit amet.</h2>
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.<span style="display: none;">dcs</span> </h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <ul>
             <li class="list">Archit</li>
@@ -26,6 +26,56 @@
             <li class="list">Archit</li>
         </ul>
     </div>
+    <script>
+
+        // const h1 = document.querySelector("h1");
+        // const h1 = document.getElementById("title");
+        // const h1 = document.querySelector("#title");
+        // const h1 = document.getElementsByClassName("heading") // gives HTML collection
+        // console.log(h1[0]);
+        // const h1 = document.getElementsByTagName("h1");
+        // const h1=document.querySelectorAll("h1");
+        // let h2 = document.querySelector("h2:nth-child(2)");
+
+        // h2.innerHTML = "Archit Raghav";
+
+        // let li = document.querySelectorAll("li");
+
+        // li.forEach((list) => {
+        //     list.innerHTML = "Raghav";
+        //     list.style.fontFamily = "Helvetica";
+        //     list.style.textDecoration = "underline";
+        //     list.style.color = "crimson";
+        // })
+
+        // let li = document.getElementsByClassName("list");
+
+        // li = Array.from(li);
+        // li.map((list) => {
+        //     list.outerHTML = "<h1>Archit</h1>"
+        // })
+
+        let div = document.querySelector("div");
+        console.log(div.firstElementChild);
+        console.log(div.lastElementChild);
+        
+        console.log(div.children); //HTML collection
+        console.log(div.childNodes); //NodeList
+        console.log(div.hasChildNodes()); //true or false => here true
+        console.log(div.childElementCount);
+        // div.children[0].innerHTML="Raghav";
+        console.log(div.parentElement); // body
+        console.log(div.nextElementSibling);
+        console.log(div.nextSibling);
+        
+        // let children = div.children;
+        
+        // children = Array.from(children);
+        // children.forEach((child) => {
+        //     child.style.color = "crimson"
+        // });
+
+    </script>
 </body>
 
 </html>
