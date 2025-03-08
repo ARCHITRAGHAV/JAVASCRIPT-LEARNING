@@ -7,7 +7,7 @@ function bgColorChanger() {
         let r = Math.floor(Math.random() * 255 + 1);
         let g = Math.floor(Math.random() * 255 + 1);
         let b = Math.floor(Math.random() * 255 + 1);
-        body.style.backgroundColor = `rgb(${r},${g},${b})`
+        body.style.backgroundColor = `rgb(${r},${g},${b})`;
     }
     startBtn.addEventListener("click", () => {
         changeColor = setInterval(colorChanger, 1000);
