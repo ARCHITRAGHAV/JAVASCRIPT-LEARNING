@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Api.css">
+    <title>API Request</title>
+</head>
+
+<body>
+    <button type="button">Click to Know about me</button>
+    <div class="image" style="opacity: 0;">
+        <img src="" alt="Photo">
+        <h5>Followers Count</h5>
+        <span></span>
+    </div>
+    </div>
+</body>
+
+<script>
+    function apiCall() {
+        const requestUrl = "https://api.github.com/users/architraghav"
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+
+                document.querySelector("button").addEventListener("click", () => {
+                    document.querySelector("img").src = data.avatar_url;
+                    document.querySelector("span").innerHTML = data.followers;
+                    document.querySelector(".image").style.opacity = 1;
+                    flag = 0;
+                })
+
+                document.querySelector("button").addEventListener("dblclick", () => {
+                    document.querySelector(".image").style.opacity = 0;
+                })
+
+            }
+        }
+        xhr.send();
+    }
+    apiCall();
+</script>
+
+</html>

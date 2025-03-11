@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    margin: 5vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    background-color: white;
+    border: 3px solid grey;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 15%;
+    width: 15%;
+}
+
+.followerInfo {
+    margin-top: 75vw;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.followerInfo h5 {
+    font-family: Helvetica;
+}
