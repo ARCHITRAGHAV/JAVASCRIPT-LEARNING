@@ -1,0 +1,11 @@
+{
+    "name": "Archit",
+    "age": 21,
+    "isEmployed": true,
+    "hobbies": [
+        "watching movies",
+        "listening music",
+        "experimenting with tech things",
+        "internet surfing"
+    ]
+}

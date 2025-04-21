@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Image</title>
+    <style>
+        #pokemonName {
+            padding: 1vw;
+            background-color: white;
+        }
+
+        #pkm-btn {
+            padding: 1vw;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <input id="pokemonName" placeholder="Enter Pokemon name" type="text">
+        <button onclick="fetchData()" id="pkm-btn">Fetch pokemon</button>
+        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+        <script src="fetch.js"></script>
+    </div>
+
+</body>
+
+</html>

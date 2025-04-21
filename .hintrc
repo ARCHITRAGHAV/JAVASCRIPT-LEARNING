@@ -4,6 +4,6 @@
   ],
   "hints": {
     "no-inline-styles": "off",
-    "axe/forms": "off"
+    "button-type": "off"
   }
 }
